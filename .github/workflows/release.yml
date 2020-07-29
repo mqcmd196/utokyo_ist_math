@@ -1,0 +1,13 @@
+name: release
+on:
+    push:
+        branches:
+            - master
+jobs:
+    build:
+        steps:
+          - name: Build the TeX files and release the PDF files
+            uses: ./.github/actions/latex
+            with:
+                GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+                RELEASE: true
