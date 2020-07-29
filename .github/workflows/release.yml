@@ -13,4 +13,3 @@ jobs:
             uses: ./.github/actions/latex
             with:
                 GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-                RELEASE: true

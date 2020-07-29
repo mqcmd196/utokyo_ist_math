@@ -14,7 +14,7 @@ for year in "${YEARS[@]}" ; do
 done
 
 # If the master branch is updated, the CI executes the below.
-if "${RELEASE}"; then
+if [ $GITHUB_WORKFLOW = "release" ]; then
   # create release
   res=`curl -H "Authorization: token $GITHUB_TOKEN" -X POST https://api.github.com/repos/$USER/$REPO/releases \
   -d "
