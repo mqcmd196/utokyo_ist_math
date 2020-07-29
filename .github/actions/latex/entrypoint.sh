@@ -10,7 +10,7 @@ YEARS = (`cat years.txt|xargs`)
 
 # compile TeX files
 for year in "${YEARS[@]}" ; do
-  latexmk -pdfdvi {$year}/{$year}answer.tex -outdir={$year}
+  latexmk -pdfdvi {$year}/{$year}answer.tex -outdir={$year} -r latexrc.pl
 done
 
 # If the master branch is updated, the CI executes the below.

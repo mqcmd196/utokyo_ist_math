@@ -1,5 +1,9 @@
 # 情報理工学系研究科数学過去問
 
+#### build status
+![release](https://github.com/mqcmd196/utokyo_ist_math/workflows/release/badge.svg)
+![develop](https://github.com/mqcmd196/utokyo_ist_math/workflows/develop/badge.svg)
+
 ## 概要
 本リポジトリは，有志によって情報理工学系研究科の数学の過去問の解答を制作することを目的としています．協力していただける方は，issueやpull requestを積極的に活用して，解答の議論をしていただけると助かります．
 
