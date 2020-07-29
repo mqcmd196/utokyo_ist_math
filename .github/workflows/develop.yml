@@ -9,6 +9,7 @@ on:
             - develop
 jobs:
     build:
+        runs-on: ubuntu-latest
         steps:
           - name: Build the TeX files
             uses: ./.github/actions/latex
