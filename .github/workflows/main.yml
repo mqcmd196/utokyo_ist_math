@@ -1,0 +1,31 @@
+name: release PDF
+on:
+    push:
+        branches:
+            - master
+jobs:
+    build:
+        steps:
+          - name: Build the TeX files and release the PDF files
+            uses: ./.github/actions/latex
+            with:
+                GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+                RELEASE: true
+        
+name: build PDF
+on: 
+    pull_request:
+        branches:
+            - master
+            - develop
+    push:
+        branches:
+            - develop
+jobs:
+    build:
+        steps:
+          - name: Build the TeX files
+            uses: ./.github/actions/latex
+            with:
+                GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+                RELEASE: false
