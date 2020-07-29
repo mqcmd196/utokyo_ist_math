@@ -2,11 +2,11 @@
 set -eux
 
 # set var
-USER=`mqcmd196`
-REPO=`utokyo_ist_math`
+USER=mqcmd196
+REPO=utokyo_ist_math
 
 # set year
-YEARS = (`cat years.txt|xargs`)
+YEARS=(`cat years.txt|xargs`)
 
 # compile TeX files
 for year in "${YEARS[@]}" ; do
@@ -31,7 +31,7 @@ if "${RELEASE}"; then
 
   # upload built pdf
   for year in "${YEARS[@]}" ; do
-    FILE_NAME = {$year}answer.pdf
+    FILE_NAME={$year}answer.pdf
     curl -H "Authorization: token $GITHUB_TOKEN" -X POST https://uploads.github.com/repos/$USER/$REPO/releases/${rel_id}/assets?name=$FILE_NAME\
       --header 'Content-Type: application/pdf'\
       --upload-file {$year}/{$FILE_NAME}
