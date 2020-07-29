@@ -15,5 +15,6 @@ jobs:
             uses: actions/checkout@develop
           - name: Build the TeX files
             uses: ./.github/actions/latex
-            with:
+            env:
                 GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+                GITHUB_WORKFLOW: $GITHUB_WORKFLOW
