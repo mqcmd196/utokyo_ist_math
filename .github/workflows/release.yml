@@ -8,7 +8,7 @@ jobs:
         runs-on: ubuntu-latest
         steps:
           - name: Build the TeX files and release the PDF files
-            uses: ./.github/actions/latex
+            uses: actions/latex
             with:
                 GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
                 RELEASE: true
