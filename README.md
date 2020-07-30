@@ -26,7 +26,7 @@ cd utokyo_ist_math
 誤りや別解等を発見したが，GitHubの操作に慣れていないという方は，[Issuesというタブ](https://github.com/mqcmd196/utokyo_ist_math/issues)を開いていただき，そちらにNew issueとしてスレッドを作成してください．
 
 ### Pull request
-GitHubの操作に慣れていて，かつ誤りや別解，バグを発見された方は，本リポジトリをforkしていただき，本リポジトリのdevelopブランチへのPull requestをお願いいたします．developブランチへのPull requestが確認されると，CIがTeXファイルのビルドを行い，結果を表示します．ビルド結果及び解答の内容から，メンテナがdevelopブランチにマージします．なおdefaultのブランチはdevelopブランチです．
+GitHubの操作に慣れていて，かつ誤りや別解，バグを発見された方は，本リポジトリをforkしていただき，本リポジトリのdevelopブランチへのPull requestをお願いいたします．developブランチへのPull requestが確認されると，CIがTeXファイルのビルドを行い，結果(コンパイルができたかどうかのみ)を表示します．ビルド結果及び解答の内容から，メンテナがdevelopブランチにマージします．なおdefaultのブランチはreleaseされるmasterではなくdevelopです．
 
 ## おことわり
 本リポジトリに上がっている解答は，必ずしも正しいとは限りません．間違っていた場合の責任は負いかねます．また間違いを見つけた場合には，issueにてその旨を報告していただくか，pull requestにて修正をしていただけると助かります．  

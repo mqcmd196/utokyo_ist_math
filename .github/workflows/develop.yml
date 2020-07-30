@@ -12,7 +12,9 @@ jobs:
         runs-on: ubuntu-latest
         steps:
           - name: Checkout develop branch
-            uses: actions/checkout@develop
+            uses: actions/checkout@v2
+            with: 
+              ref: develop
           - name: Build the TeX files
             uses: ./.github/actions/latex
             env:
