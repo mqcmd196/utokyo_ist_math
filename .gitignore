@@ -285,3 +285,6 @@ TSWLatexianTemp*
 
 # ignore compiled pdf
 *answer.pdf
+
+# dir .sty
+*/plistings.sty
